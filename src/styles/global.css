@@ -57,6 +57,7 @@ body[data-brand='labs'] {
 }
 
 html {
+  scroll-padding-top: 90px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
@@ -938,4 +939,93 @@ body[data-brand='labs'] .hero h1 em {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* ---------- Product cards & chips ---------- */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+}
+.chips li {
+  font-size: 0.8rem;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+.venture--feature .chips li {
+  border-color: rgba(238, 242, 255, 0.18);
+  color: #dfe5f5;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.product .more {
+  margin-top: auto;
+  padding-top: 22px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.product-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.product-head .venture-tag {
+  margin: 0;
+}
+.product h3 {
+  font-size: 1.7rem;
+  margin-bottom: 4px;
+}
+.product-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.product-logo {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.product-logo--vpn {
+  background: linear-gradient(135deg, #7c8cff, #3b2a8f);
+  box-shadow: 0 10px 30px -10px rgba(124, 140, 255, 0.7);
+}
+.product-logo--vault {
+  background: linear-gradient(135deg, #7cf5c4, #0f6b55);
+  color: #04120c;
+  box-shadow: 0 10px 30px -10px rgba(124, 245, 196, 0.6);
+}
+
+.also-built {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 22px;
+  margin-top: 28px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.also-built a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
 }
