@@ -1029,3 +1029,8 @@ body[data-brand='labs'] .hero h1 em {
   text-decoration: none;
   border-bottom: 1px solid var(--accent);
 }
+.product-logo--kids {
+  background: linear-gradient(135deg, #ffd166, #ff7a59);
+  color: #2a1204;
+  box-shadow: 0 10px 30px -10px rgba(255, 140, 90, 0.6);
+}
