@@ -547,6 +547,7 @@ body[data-brand='labs'] .checklist li::before {
   font-size: 1.6rem;
 }
 .venture .more {
+  text-decoration: none;
   margin-top: auto;
   padding-top: 20px;
   font-weight: 600;
