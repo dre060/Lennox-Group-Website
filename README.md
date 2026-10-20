@@ -1,13 +1,10 @@
 # Lennox Group Website
 
-Marketing site for **Lennox Group** and its technology studio **Lennox Digital Labs**.
+Website for **Lennox Group**, the holding company behind Lennox Digital Labs, TravelVibe, ParkingVibe, Lennox Global Technologies, NexDrive and ALL Protocol.
 
-| Page | Path | Source |
-| --- | --- | --- |
-| Lennox Group | `/` | `index.html` |
-| Lennox Digital Labs | `/labs/` | `labs/index.html` |
+Lennox Digital Labs has its own site and repository (`dre060/lennox-digital-labs`, www.lennoxdigitallabs.com). This site links to it.
 
-Built with [Vite](https://vitejs.dev/) as a static multi-page site: plain HTML, one shared stylesheet (`src/styles/global.css`) and a small script (`src/index.js`) for the mobile menu, scroll reveals and contact forms. Each page picks its palette via `<body data-brand="group|labs">`.
+Static site built with [Vite](https://vitejs.dev/): `index.html`, a stylesheet (`src/styles/global.css`) and a small script (`src/index.js`) for the mobile menu, scroll reveals and the contact form.
 
 ## Development
 
@@ -18,10 +15,12 @@ npm run build    # production build to dist/
 npm run preview  # serve the build
 ```
 
-`dist/` is fully static and can be deployed to Vercel, Netlify, GitHub Pages or any static host.
+## Deployment (Vercel)
+
+- Framework: Vite · Build command: `npm run build` · Output directory: `dist`
+- Domain: to be decided. Once it is set, also set `GROUP_URL` on the Lennox Digital Labs Vercel project so its "Lennox Group" links point here.
 
 ## Before launch
 
-- Replace placeholder copy, the leadership quote and the email addresses (`hello@` / `labs@lennoxgroup.com`) with real details.
-- Contact forms currently open the visitor's email app (`mailto:`). Swap in a form backend (e.g. Formspree, Resend or a serverless function) to collect submissions directly.
-- Add real portfolio companies and case studies as they become available.
+- Replace `hello@lennoxgroup.com` with the real contact address once the Group domain is chosen.
+- The contact form opens the visitor's email app (`mailto:`). Swap in a form backend to collect submissions directly.
