@@ -24,5 +24,5 @@ Set the `GROUP_URL` environment variable in Vercel (for example `https://www.exa
 
 ## Before launch
 
-- Make sure the `hello@lennoxdigitallabs.com` mailbox exists, or change the address in `index.html`.
+- Make sure the `support@lennoxdigitallabs.com` mailbox exists, or change the address in `index.html`.
 - The contact form opens the visitor's email app (`mailto:`). Swap in a form backend to collect submissions directly.
